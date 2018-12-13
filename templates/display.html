@@ -1,0 +1,27 @@
+<html>
+<title>
+    ADDITION
+</title>
+ <body>
+ <p><h1>ADDITON OF TWO NUMBERS</h1></p>
+   <p>Input first number:</p>
+   <input type='text' class='first_num'>
+   <p>Input second number:</p>
+   <input type='text' class='second_num'>
+   <div class='results'></div>
+   <button type='button' class='calculate'>Calculate</button>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     $('.calculate').click(function() {
+       var num1 = parseInt($('.first_num').val());
+       var num2 = parseInt($('.second_num').val());
+       var num3 = num1+num2;
+       $('.results').html('The result is '+num3);
+     });
+   });
+ </script>
+</html>
+
+
